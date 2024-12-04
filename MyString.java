@@ -25,7 +25,25 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.charAt(i) == str2.charAt(0)) {
+                int j = 0;
+                while (j < str2.length()) {
+                    if (i + j +1> str1.length()) {
+                        break;
+                        // make sure the index doesnt distroy me
+                    }
+                    if (str1.charAt(i + j) == str2.charAt(j)) {
+                        j++;
+                    } else {
+                        break;
+                    }
+                }
+                if (j == str2.length()) {
+                    return true;
+                }
+            }
+        }
         // Replace the following statement with your code
         return false;
     }
