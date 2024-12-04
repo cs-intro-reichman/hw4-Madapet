@@ -33,7 +33,7 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        if (str2.length() == 0){return false;}
+        if (str2.length() == 0){return true;}
         str1 = lowerCase(str1);
         str2 = lowerCase(str2);
         for (int i = 0; i < str1.length(); i++) {
