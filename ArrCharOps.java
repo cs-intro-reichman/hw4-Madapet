@@ -6,7 +6,6 @@ public class ArrCharOps {
     public static void main(String[] args) {
         String str = "clearly";
         char[] arr1 = { 'c', 'l', 'e', 'a', 'r', 'l', 'y' };
-        char[] arr3 = {};
 
         char[] arr2 = { 'U', 'n', 'd', 'e', 'r', 's', 't', 'o', 'o', 'd' };
         System.out.println(str); // Prints the string
@@ -170,7 +169,8 @@ public class ArrCharOps {
         // Replace the following statement with your code
         long hash = 0;
         for (int i = 0; i < arr.length; i++) {
-            hash += Math.pow(arr[i] * 7, (arr.length - i - 1));
+            hash += arr[i] * Math.pow(7, (arr.length - i - 1));
+            //hash += Math.pow(arr[i] * 7, (arr.length - i - 1));
         }
         return hash;
     }
