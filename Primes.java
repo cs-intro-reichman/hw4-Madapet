@@ -22,7 +22,7 @@ public class Primes {
         while (index < arr1.length) {
             
             if (arr1[index] == true) {
-                System.out.println("this is the number" + index);
+                //System.out.println("this is the number" + index);
                 check_num(index);
                 index++;
             } else {
@@ -37,7 +37,7 @@ public class Primes {
             //System.out.println(index);
             //System.out.println(j);
             if (j % index == 0) {
-                System.out.println(j + " this is not p");
+                //System.out.println(j + " this is not p");
                 arr1[j] = false;
                 j++;
             } else {
@@ -48,7 +48,7 @@ public class Primes {
 
     public static void print_end(int N) {
         System.out.println("Prime numbers up to " + N + ":");
-        System.out.println(arr1[7]);
+        //System.out.println(arr1[7]);
         int counter = 0;
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] == true) {
