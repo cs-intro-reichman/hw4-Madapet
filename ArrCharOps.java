@@ -207,6 +207,9 @@ public class ArrCharOps {
     public static int compareTo(String str1, String str2) {
         // Replace the following statement with your code
         // if str1 is shorter then str2
+        if (str1.isEmpty() || str2.isEmpty()) {return -2;
+            
+        }
         if (str1.toLowerCase() == str2.toLowerCase()) {
             return 0;
         }
