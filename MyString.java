@@ -1,3 +1,4 @@
+
 public class MyString {
     public static void main(String[] args) {
         System.out.println("Testing lowercase:");
@@ -34,8 +35,8 @@ public class MyString {
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
         if (str2.length() == 0){return true;}
-        str1 = lowerCase(str1);
-        str2 = lowerCase(str2);
+        str1 = removeSpaces(lowerCase(str1));
+        str2 = removeSpaces(lowerCase(str2));
         for (int i = 0; i < str1.length(); i++) {
             if (str1.charAt(i) == str2.charAt(0)) {
                 int j = 0;
@@ -57,4 +58,19 @@ public class MyString {
         // Replace the following statement with your code
         return false;
     }
+
+    public static String removeSpaces(String str){
+		String returned_string = "";
+		str = str.toLowerCase();
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			if ((ch <= 'z' && ch >= 'a') || (ch >= '0' && ch <= '9')) {
+				returned_string = returned_string + ch;
+			}
+
+		}
+		// Replace the following statement with your code
+		return returned_string;
+	
+	}
 }
