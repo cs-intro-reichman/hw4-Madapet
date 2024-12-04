@@ -8,9 +8,9 @@ public class ArrCharOps {
         char[] arr1 = { 'c', 'l', 'e', 'a', 'r', 'l', 'y' };
 
         char[] arr2 = { 'U', 'n', 'd', 'e', 'r', 's', 't', 'o', 'o', 'd' };
-       //System.out.println(str); // Prints the string
-        //println(arr1); // Prints an array of characters
-       // System.out.println(charAt(arr1, 2));
+        // System.out.println(str); // Prints the string
+        // println(arr1); // Prints an array of characters
+        // System.out.println(charAt(arr1, 2));
         // System.out.println(equals(arr1, arr2));
         // System.out.println(equals(arr1, arr3));/
         /*
@@ -29,10 +29,10 @@ public class ArrCharOps {
          * System.out.println(hashCode(arr1));
          * System.out.println(hashCode(arr2));
          */
-       // System.out.println(compareTo("abc", "aBc"));
+        // System.out.println(compareTo("abc", "aBc"));
         System.out.println(compareTo("abc", "aBc"));
         System.out.println(compareTo("abc", "abc"));
-        //System.out.println(compareTo("abc", "aBc") );
+        // System.out.println(compareTo("abc", "aBc") );
         System.out.println(compareTo("abc", "abcd"));
 
         System.out.println(compareTo("abc", ""));
@@ -220,7 +220,7 @@ public class ArrCharOps {
             return -2;
 
         }
-        if (str1.length() == str2.length()){
+        if (str1.length() == str2.length()) {
             for (int i = 0; i < str1.length(); i++) {
                 if (str1.charAt(i) < str2.charAt(i)) {
                     return -1;

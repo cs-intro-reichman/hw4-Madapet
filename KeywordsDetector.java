@@ -43,7 +43,7 @@ public class KeywordsDetector {
                 //System.out.println("check " + str2);
                 for (int j = 0; j < keywords.length; j++) {
                     //System.out.println(keywords[j]);
-                    if (MyString.contains(str2, keywords[j])) {
+                    if (MyString.contains(str2.toLowerCase(), keywords[j].toLowerCase())) {
                         //System.out.println("FOUND !!!");
                         return true;
                     }
